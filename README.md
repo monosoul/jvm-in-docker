@@ -39,3 +39,6 @@ To build slim JRE image:
 To run slim JRE image:
 `docker run --rm -p 8080:8080 jvm-in-docker:jre-slim`
 
+---
+
+![screenshot](screenshot.png)
