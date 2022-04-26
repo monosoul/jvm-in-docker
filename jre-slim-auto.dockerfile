@@ -28,13 +28,13 @@ COPY --from=deps /deps.info /deps.info
 
 # Build small JRE image
 RUN $JAVA_HOME/bin/jlink \
-         --verbose \
-         --add-modules $(cat /deps.info) \
-         --strip-debug \
-         --no-man-pages \
-         --no-header-files \
-         --compress=2 \
-         --output /customjre
+    --verbose \
+    --add-modules $(cat /deps.info) \
+    --strip-debug \
+    --no-man-pages \
+    --no-header-files \
+    --compress=2 \
+    --output /customjre
 
 # main app image
 FROM alpine:latest

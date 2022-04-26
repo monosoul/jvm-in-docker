@@ -6,13 +6,13 @@ RUN apk add --no-cache binutils
 
 # Build small JRE image
 RUN $JAVA_HOME/bin/jlink \
-         --verbose \
-         --add-modules java.base,java.management,java.naming,java.net.http,java.security.jgss,java.security.sasl,java.sql,jdk.httpserver,jdk.unsupported \
-         --strip-debug \
-         --no-man-pages \
-         --no-header-files \
-         --compress=2 \
-         --output /customjre
+    --verbose \
+    --add-modules java.base,java.management,java.naming,java.net.http,java.security.jgss,java.security.sasl,java.sql,jdk.httpserver,jdk.unsupported \
+    --strip-debug \
+    --no-man-pages \
+    --no-header-files \
+    --compress=2 \
+    --output /customjre
 
 # main app image
 FROM alpine:latest
