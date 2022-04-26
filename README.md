@@ -41,4 +41,9 @@ To run slim JRE image:
 
 ---
 
+To build slim JRE image with automated dependency analysis:
+`docker build -t jvm-in-docker:jre-slim -f jre-slim-auto.dockerfile .`
+
+--
+
 ![screenshot](screenshot.png)
