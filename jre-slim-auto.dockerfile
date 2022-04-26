@@ -1,4 +1,5 @@
 # Used to analyze dependencies bacause jdeps from JDK 17 has a bug
+# https://stackoverflow.com/questions/69943899/jdeps-cant-print-module-deps-due-to-a-multireleaseexception
 FROM amazoncorretto:18-alpine as deps
 
 # Identify dependencies
